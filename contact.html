@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,36 +9,55 @@
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
     <script src="main.js"></script>
 </head>
+
 <body>
-    <div id="header">
-        Samuel Holtzman 
-    </div>
-    
-    <div id="nav">
+    <header id="masthead">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                    <a href="index.html" id="logo">Samuel Holtzman</a>
+                </div>
+                <div class="col-sm-9">
+                    <nav>
+                        <a class="btn btn-outline-primary" href="index.html">About</a>
+                        <a class="btn btn-outline-primary" href="portfolio.html">Portfolio</a>
+                        <a class="btn btn-outline-primary" href="contact.html">Contact</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
 
-        <a href="index.html">About</a> <a href="portfolio.html">Portfolio</a> Contact
-
-    </div>
-
-    <h2>Contact</h2>
-
-    <form>
-        <label>name</label>
-        <input id="name">
-        <br>
-        <label>email</label> 
-        <input id="email">
-        <br>
-        <label>message</label>
-        <textarea rows="4" cols="50"></textarea>
-        <br>
-        <button type="button">submit</button>
-
-    </form>
-
-    <footer>
-        FOOTER
-    </footer>
+    <div id="main-container" class="container">
+        <div class="row">
+            <div class="col-sm-8">
+                <section class="main-section">
+                    <h1>Contact</h1>
+                    <form id="contact-form">
+                        <ul>
+                            <li>
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" placeholder="John Smith" required="required">
+                            </li>
+                            <li>
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" placeholder="example@gmail.com" required="required">
+                            </li>
+                            <li>
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" required="required"></textarea>
+                            </li>
+                        </ul>
+                        <input type="submit">
+                    </form>
+                </section>
+            </div>
+        </div>
+        <footer>
+            <div class="container">
+            </div>
+        </footer>
 
 </body>
+
 </html>
