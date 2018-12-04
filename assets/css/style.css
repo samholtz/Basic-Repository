@@ -50,6 +50,11 @@ h3 {
   font-size: 22px;
 }
 
+h5 {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
 /* header */
 
 #masthead {
@@ -65,10 +70,10 @@ h3 {
 
 #logo {
   float: left;
-  width: 100%;
+  width: 500px;
   height: 90px;
   font-family: Georgia, Times, "Times New Roman", serif;
-  font-size: 100%;
+  font-size: 30px;
   font-weight: 700;
   line-height: 90px;
   color: #fff;
@@ -87,7 +92,7 @@ nav a {
   padding-left: 15px;
   margin-left: 15px;
   line-height: 18px;
-  color: #999;
+  /* color: #999; */
   text-decoration: none;
   border-left: 1px solid #efefef;
 }
@@ -139,10 +144,9 @@ h3, h2 {
 .work {
   position: relative;
   float: left;
-  width: 250px;
+  width: 274px;
   margin: 20px 0 25px;
   overflow: auto;
-  height: 250px;
 }
 
 .work:nth-child(even) {
@@ -215,4 +219,40 @@ input[type=submit] {
   cursor: pointer;
   background: #4aaaa5;
   border: 0 none;
+}
+
+@media screen and (max-width: 980px) {
+    #logo {
+      width: 25%;
+    }
+    #main-container {
+      width: 75%;
+      float: left;
+    }
+}
+@media screen and (max-width: 768px) {
+  #logo {
+    width: 25%;
+  }
+  #main-container {
+    width: 75%;
+    float: left;
+  }
+}
+@media screen and (max-width: 640px) {
+  #logo {
+    width: 100%;
+  }
+  #main-container {
+    width: 100%;
+    padding: 0px;
+  }
+  nav {
+    margin: auto;
+    width: 100%;
+    text-align: center;
+  }
+  #masthead {
+    position: static;
+  } 
 }
